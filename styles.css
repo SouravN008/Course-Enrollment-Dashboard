@@ -1,0 +1,201 @@
+/* Reset some default styles to ensure consistent rendering */
+body, h1, h2, p, ul, li, button, select {
+       margin: 0;
+       padding: 0;
+   }
+   
+   body {
+       font-family: 'Arial', sans-serif;
+       background-image: url('programming.jpg');
+       background-size: cover; /* Cover the entire viewport */
+       background-position: center; /* Center the image horizontally and vertically */
+       background-repeat: no-repeat; /* Prevent image from repeating */
+       background-attachment: fixed;
+       color: #1a1414ef; /* Default text color */
+   }
+   
+   /* Header styles */
+   header {
+       background-color: #007bff;
+       color: white;
+       text-align: center;
+       padding: 20px 0;
+   }
+   
+   /* Main content container */
+   main {
+       max-width: 1200px;
+       margin: 20px auto;
+       padding: 20px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       border-radius: 8px;
+   }
+   
+   /* Course listing container */
+   #course-listing {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+   }
+   
+   /* Course card styles */
+   .course-card {
+       width: calc(50% - 20px); /* Two courses per row */
+       background-color: rgb(162, 77, 196);/* Background color for course cards */
+       padding: 15px;
+       border: 1px solid #ddd;
+       border-radius: 8px;
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   }
+   
+   .course-card h2 {
+       font-size: 18px;
+       margin-bottom: 10px;
+       color: #333; /* Course title color */
+   }
+   
+   .course-card p {
+       font-size: 14px;
+       margin-bottom: 10px;
+       color: #666; /* Course description color */
+   }
+   
+   /* Enrolled courses container */
+   #enrolled-courses {
+       margin-top: 20px;
+   }
+   
+   /* Filters container */
+   #filters {
+       margin-top: 20px;
+   }
+   
+   /* Filter select styles */
+   select {
+       padding: 8px;
+       font-size: 14px;
+       border: 1px solid #ddd;
+       border-radius: 3px;
+       color: #e821e2; /* Select text color */
+   }
+   
+   /* Enroll/Unenroll button styles */
+   button.enroll-button
+          {
+       padding: 8px 16px;
+       font-size: 14px;
+       background-color: #55ba0d;
+       color: white;
+       border: none;
+       border-radius: 3px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+   }
+   button.unenroll-button{
+       padding: 8px 16px;
+       font-size: 14px;
+       background-color: #f51818;
+       color: white;
+       border: none;
+       border-radius: 3px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+   }
+   
+   button.enroll-button:hover,
+   button.unenroll-button:hover {
+       background-color: #f3f5f5; /* Hover color */
+   }
+   
+   /* Pagination styles */
+   #pagination {
+       display: flex;
+       list-style: none;
+       padding: 0;
+       justify-content: center;
+       margin-top: 20px;
+   }
+   
+   #pagination li {
+       margin-right: 10px;
+   }
+   
+   /* Responsive design for tablets and larger screens */
+   @media screen and (min-width: 768px) {
+       #course-listing .course-card {
+           width: calc(33.33% - 20px); /* Three courses per row */
+       }
+   
+       #filters {
+           width: 30%;
+       }
+   }
+   
+   /* Responsive design for desktop screens */
+   @media screen and (min-width: 1200px) {
+       #course-listing .course-card {
+           width: calc(25% - 20px); /* Four courses per row */
+       }
+   }
+   /* ... (previous CSS rules) ... */
+
+/* Updated styles for the navbar section */
+header {
+       background-color: #580ca3;
+       color: white;
+       text-align: center;
+       padding: 20px 0;
+   }
+   
+   /* Styles for the filter and search bar container */
+   #navbar {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 auto;
+       max-width: 1200px;
+   }
+   
+   /* Styles for the filter and search bar elements */
+   #filters, #search-bar {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       gap: 10px;
+   }
+   
+   #instructor-filter, #subject-filter {
+       padding: 8px;
+       font-size: 14px;
+       border: 1px solid #ddd;
+       border-radius: 3px;
+       color: #555;
+   }
+   
+   /* Styles for the search input and button */
+   #course-search {
+       padding: 8px;
+       font-size: 14px;
+       border: 1px solid #ddd;
+       border-radius: 3px;
+       color: #555;
+   }
+   
+   #search-button {
+       padding: 8px 16px;
+       font-size: 14px;
+       background-color: #0bbcbf;
+       color: rgb(21, 15, 15);
+       border: none;
+       border-radius: 3px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+   }
+   
+   #search-button:hover {
+       background-color: #0056b3;
+   }
+   
+   
+   
